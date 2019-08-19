@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Register</h2>
+
+<form action="@Url.Action("SignUp")" method="post">
+    Username:<input type="text" name="UserId" /> <br /><br />
+    Full Name:<input type="text" name="UserName" /> <br /><br />
+    Email:<input type="text" name="UserEmail" /> <br /><br />
+    Password:<input type="password" name="UserPassword" /> <br /><br />
+    Address:<input type="text" name="UserAddress" /> <br /><br />
+    <input class="btn btn-success" type="submit" value="Register" />
+
+</form>
+
